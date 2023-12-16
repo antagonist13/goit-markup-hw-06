@@ -133,7 +133,10 @@ button {
 .half-logo-black {
   color: #2e2f42;
 }
-.item-flex-header-list {
+.item-flex-header-nav {
+  display: none;
+}
+.item-flex-header-address {
   display: none;
 }
 .address {
@@ -247,6 +250,11 @@ button {
 /* </MOBILE HEADER> */
 /* MOBILE SECTION EFFECTIVE SOLUTIONS */
 .main-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -279,6 +287,7 @@ button {
       url(../images/mobile-people-office@2x.jpg);
   }
 }
+
 .order-button {
   border-radius: 4px;
   background: #4d5ae5;
@@ -824,15 +833,113 @@ button {
   margin-left: 16px;
 }
 /* MOBILE FOOTER  */
+/* TABLET STYLES */
+
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 546px;
+    max-width: 768px;
   }
   .mobile-menu-open-btn {
     display: none;
   }
+  .mobile-menu-wrapper {
+    display: none;
+  }
+  /* TABLET HEADER */
+  .item-flex-header {
+    display: flex;
+    align-items: center;
+  }
+  .item-flex-header-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    gap: 40px;
+  }
+  .logo {
+    padding: 24px 0;
+  }
+  .menu-link {
+    display: flex;
+    padding: 24px 0;
+    color: #2e2f42;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
+  }
+  .menu-link-main {
+    color: #404bbf;
+  }
+  .menu-link-main::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+    justify-content: center;
+    bottom: -1px;
+  }
+  .item-flex-header-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .address {
+    display: block;
+  }
+  .contact {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.04em;
+    color: #434455;
+    display: block;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact:hover,
+  .contact:focus {
+    color: #404bbf;
+  }
+  /* /TABLET HEADER */
+  /* TABLET FIRST SECTION EFFECTIVE SOLUTIONS */
+  .main-section {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-people-office.jpg);
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1157px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1157px) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-people-office@2x.jpg);
+    }
+  }
+  .main-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.043em;
+    padding: 0 100px;
+    text-transform: none;
+  }
+  /* /TABLET FIRST SECTION EFFECTIVE SOLUTIONS */
 }
-
+/* /TABLET STYLES */
+/* DESKTOP STYLES */
 @media screen and (min-width: 1168px) {
   .container {
     max-width: 1158px;
@@ -850,3 +957,4 @@ button {
     margin-bottom: 8px;
   }
 }
+/* DESKTOP STYLES */
