@@ -152,6 +152,7 @@ button {
     padding: 0;
     line-height: 0;
     stroke: #111111;
+    padding: 17.5px 0;
   }
   .mobile-menu-wrapper {
     position: fixed;
