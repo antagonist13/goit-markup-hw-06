@@ -627,6 +627,9 @@ button {
 .section-our-portfolio {
   padding: 96px 0 96px 0;
 }
+.title-our-portfolio {
+  text-align: center;
+}
 .icon-group-portfolio {
   display: flex;
   flex-direction: column;
@@ -766,13 +769,9 @@ button {
   background-color: #31d0aa;
 }
 .footer-second-part {
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
 }
 .footer-third-part {
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
 }
 .subscribe-form {
@@ -946,9 +945,61 @@ button {
     max-width: 338px;
   }
   /* /TABLET FIRST SECTION EFFECTIVE SOLUTIONS */
+  /* TABLET SECTION BENEFITS */
+  .benefit-main-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .benefit-block {
+    width: calc((100% - 24px) / 2);
+    text-align: left;
+  }
+  /* /TABLET SECTION BENEFITS */
   /* TABLET SECTION OUR TEAM */
+  .icon-group {
+    flex-direction: row;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   /* /TABLET SECTION OUR TEAM */
+  /* TABLET SECTION OUR PORTFOLIO */
+  .icon-group-portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+  /* /TABLET SECTION OUR PORTFOLIO */
+  /* TABLET FOOTER */
+  .flex-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer-first-part {
+    width: 264px;
+    text-align: left;
+  }
+  .footer-second-part {
+    text-align: left;
+  }
+  .footer-third-part {
+    text-align: left;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    margin-right: 43px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  /* /TABLET FOOTER */
 }
 /* /TABLET STYLES */
 /* DESKTOP STYLES */
