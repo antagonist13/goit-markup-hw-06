@@ -255,7 +255,7 @@ img {
 }
 /* SECTION OUR TEAM*/
 .section-our-team {
-  background: var(--CLOUD, #f4f4fd);
+  background: #f4f4fd;
 }
 .icon-group {
   display: flex;
