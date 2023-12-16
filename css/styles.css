@@ -939,6 +939,12 @@ button {
   .order-button {
     margin-top: 36px;
   }
+  .modal {
+    width: 408px;
+  }
+  .form-checkbox-privacy-text {
+    max-width: 338px;
+  }
   /* /TABLET FIRST SECTION EFFECTIVE SOLUTIONS */
   /* TABLET SECTION OUR TEAM */
 
