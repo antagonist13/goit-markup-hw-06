@@ -29,6 +29,7 @@ img {
 button {
   cursor: pointer;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,6 +77,36 @@ button {
   border: none;
 }
 /* <MOBILE HEADER> */
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.text-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.text-medium {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.accent-color {
+  color: #404bbf;
+}
 .header {
   background: var(--WHITE, #fff);
   border-bottom: 1px solid #e7e9fc;
@@ -139,6 +170,77 @@ button {
   }
   .mobile-menu-container {
     position: relative;
+  }
+  .mobile-menu-flex-header {
+    display: flex;
+    align-items: center;
+  }
+  .item-mobile-menu-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 72px;
+    margin-bottom: 168px;
+  }
+  .item-mobile-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  .mobile-address {
+    font-style: normal;
+    display: block;
+  }
+  .mobile-menu-contact {
+    display: block;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-contact:hover,
+  .mobile-menu-contact:focus {
+    color: #404bbf;
+  }
+  .mobile-menu-link {
+    display: flex;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--OCEAN, #404bbf);
+  }
+  .mobile-menu-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .mobile-menu-social-list-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-menu-social-list-link {
+    display: flex;
+    line-height: 0;
+    stroke: #111111;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    justify-content: center;
+    align-items: center;
+
+    fill: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-social-list-link:hover,
+  .mobile-menu-social-list-link:focus {
+    background-color: #404bbf;
+  }
+  .mobile-menu-social-list-icon {
+    stroke: #f4f4fd;
+    fill: #f4f4fd;
+    display: block;
   }
 }
 /* </MOBILE HEADER> */
