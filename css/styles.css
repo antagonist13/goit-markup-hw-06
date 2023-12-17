@@ -128,7 +128,6 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   display: block;
-  padding: 17.5px 0;
 }
 .half-logo-black {
   color: #2e2f42;
@@ -865,9 +864,7 @@ button {
     margin-left: 120px;
     gap: 40px;
   }
-  .logo {
-    padding: 24px 0;
-  }
+
   .menu-link {
     padding: 24px 0;
     color: #2e2f42;
